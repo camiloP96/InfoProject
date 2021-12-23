@@ -5,6 +5,7 @@ type Data = {
   name: string
 }
 
+//pide request y report y devuelve un estado
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>

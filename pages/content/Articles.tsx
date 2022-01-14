@@ -1,4 +1,5 @@
 
+import Link from 'next/link'
 import React from 'react'
 
 
@@ -18,17 +19,41 @@ const Articles = () => {
             </p>
 
         </div>
-        <div className='text-2xl text-center my-6 flex-raw'>
+     
+        <div className='grid text-2xl grid-cols-2 text-center m-5'>
             <div>
+              
+                Basic references
+            </div>
+            <div>
+                Relevant Authors
+            </div>
+            <div>
+                Top Journals
+            </div>
+            <div>
+                Advanced references
+            </div>
+
+            </div>
+
+            <div className="text-center m-5">
                 -
                 MAP
                 -
 
             </div>
-            <div>
-                References
+
+
+            <div className='text-center'>
+            <button className="bg-slate-800 hover:bg-slate-600 rounded-lg ">
+            <Link href="/content/AddArticle">
+                <a>Add Article</a>
+            </Link>
+
+            </button>
             </div>
-        </div>
+      
 
         </>
     )

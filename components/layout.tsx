@@ -11,16 +11,13 @@ const Layout:FC<Props> = ({children,...props}) => {
         <div className= ' bg-slate-900 text-white flex flex-raw- justify-items-center min-h-screen'>
             <Sidenavbar/>
             
-          <div className='flex-1 flex-col space-y-6 m-10'>
-             
-
-            <div className=' justify-start'>
-           layout {children}
-            </div>    
+          <div className='m-5 p-5' >
+        
+           layout
+            {children}
+              
           </div>
-
-          
-            
+        
         </div>
     )
 }

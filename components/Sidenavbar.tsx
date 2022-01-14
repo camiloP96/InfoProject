@@ -1,10 +1,8 @@
-import React,{FC} from 'react'
+import React from 'react'
 import Link from 'next/link';
-interface Props{
 
-}
 
-const sidenavbar:FC <Props> = ({children,...props}) => {
+const sidenavbar = ({}) => {
     return (
       <div className="w-1/4 flex flex-col bg-slate-800 p-20 space-y-14 text-2xl font-bold">
         <div>
@@ -12,20 +10,25 @@ const sidenavbar:FC <Props> = ({children,...props}) => {
         </div>
         
         <Link href='/'>
-        <button className='rounded-md bg-gray-600 px-10'>
-        {children}
+        <button className='rounded-md bg-slate-700 px-10 hover:bg-slate-900'>
+        
                 <a>Home</a>
 
         </button>
               </Link>
 
         <Link href='/users/user'>
-        <button className='rounded-md bg-gray-600 px-10'>
-        {children}
+        <button className='rounded-md bg-slate-700 px-10 hover:bg-slate-900'>
+        
                 <a>Profile</a>
 
         </button>
               </Link>
+        <Link href='/About'>
+                <button className='rounded-md bg-slate-700 px-10 hover:bg-slate-900'>
+                        <a>About</a>
+                </button>
+        </Link>
 
       </div>
         

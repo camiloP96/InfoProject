@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/dist/client/link'
 
 const user = () => {
     return (
@@ -25,7 +26,19 @@ const user = () => {
                    <td>student</td>
                </tr>
            </table>
-          
+            <div className='gap-4 m-5 grid grid-cols-1'>
+           <Link href='/content/AddTopic'>
+               <button className='bg-slate-600 rounded'>
+               <a>Add Topic</a>
+               </button>
+           </Link>
+
+           <Link href='/content/AddDomain'>
+               <button className='bg-slate-600 rounded'>
+               <a>Add Domain</a>
+               </button>
+           </Link>
+           </div>
         </div>
     )
 }
